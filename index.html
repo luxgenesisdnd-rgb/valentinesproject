@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" type="image/jpg" href="favicon.jpg">
+    <style>
+        body{
+            background-image:url(https://i.pinimg.com/originals/0c/e5/ef/0ce5ef27f70a4e5d9079aac5ba7bae15.gif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            color:rgb(183, 80, 121);
+            text-align: center;
+        }
+         .center-info{
+            margin:auto;
+            width:50%;
+            background-color:pink;
+            padding:10px;
+            padding-bottom:10%;
+        }
+
+        .center-playlist{
+            margin:auto;
+            width:40%;
+            border: 3px solid brown;
+            background-color:rgb(255, 155, 208);
+            padding:10px;
+            padding-bottom:10%;
+        }
+
+        #music-player {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #song-image {
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        #song-name {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+
+        #music-buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #music-buttons i {
+            padding: 10px;
+            /* color: red; */
+        }
+
+        #slider-song {
+            /* accent-color: red; */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 300px;
+            height: 5px;
+            background: rgb(229, 139, 154);
+            border: 1px solid rgb(183, 80, 121);
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        #slider-song::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: brown;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        img{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+    <body>
+        <div class = "center-info">
+                <div class="center-playlist">
+                    <div id="music-player">
+                    <img id="song-image" src="./album-art1.jpg"/>
+                    <div id="song-name">Song</div>
+                    <div id="song-artist">Artist</div>
+
+                    <input id="slider-song" type="range">
+
+                    <div id="music-buttons">
+                        <input type="image" id="shuffle-song" alt="shuffle" src="Shuffle button.png" width="30" height="30"/>
+                        <input type="image" id="prev-song" alt="backward" src="Backward button.png" width="30" height="30"/>
+                        <input type="image" id="playpause-song" alt="playpause" src="Play button.PNG" width="30" height="30"/>
+                        <input type="image" id="next-song" alt="next" src="Forward button.PNG" width="30" height="30"/>
+                        <input type="image" id="repeat-song" alt="repeat" src="Repeat button.PNG" width="30" height="30"/>                                                                                                                                
+                    </div>
+                </div>
+            </div>
+            <h3>Kindly please adjust the volume on your pc for browser settings before playing. It's gonna be too loud.</h3>
+            <a href="valentine.html" target="blank">
+                <img src="valentine_letter.png">
+            </a>
+            <h3>Click the envelope</h3>
+        </div>
+        <script src="music-player.js"></script>
+    </body>
+</html>
